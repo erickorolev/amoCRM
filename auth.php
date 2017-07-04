@@ -1,11 +1,11 @@
 <?php
 #Массив с параметрами, которые нужно передать методом POST к API системы
 $user=array(
-	'USER_LOGIN'=>'test@testmail.com', #Ваш логин (электронная почта)
-	'USER_HASH'=>'7ebefd1d4741106a4daa0e0a673bba2e4dc16054' #Хэш для доступа к API (смотрите в профиле пользователя)
+	'USER_LOGIN'=>'stroimrb102@yandex.ru', #Ваш логин (электронная почта)
+	'USER_HASH'=>'3b84ac7b997ecf1f05c0dfed6afd6e80' #Хэш для доступа к API (смотрите в профиле пользователя)
 );
  
-$subdomain='torf'; #Наш аккаунт - поддомен
+$subdomain='new59539734e5c08'; #Наш аккаунт - поддомен
 #Формируем ссылку для запроса
 $link='https://'.$subdomain.'.amocrm.ru/private/api/auth.php?type=json';
 $curl=curl_init(); #Сохраняем дескриптор сеанса cURL

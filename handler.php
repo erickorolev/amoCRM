@@ -7,5 +7,4 @@ require $root.'auth.php'; #Здесь будет происходить авто
 require $root.'account_current.php'; #Здесь мы будем получать информацию об аккаунте
 require $root.'fields_info.php'; #Получим информацию о полях
 require $root.'contacts_list.php'; #Получим информацию о контактах
-require $root.'contact_add.php'; #Здесь будет происходить добавление контакта
 ?>
