@@ -21,10 +21,11 @@ CheckCurlResponse($code);
  */
 $Response=json_decode($out,true);
 $account=$Response['response']['account'];
+
 // Сохраняю в переменной название воронки продаж. 
 // Как перебирать id воронки?
 // $pipelines=$Response['response']['account']['pipelines'];
-$pipelines_name=$account['pipelines']['663379']['name'];
-$leads_statuses_name=$account['leads_statuses']['0']['name'];
-$leads_statuses_id=$account['leads_statuses']['0']['id'];
+// $pipelines_name=$account['pipelines']['663379']['name'];
+// $leads_statuses_name=$account['leads_statuses']['0']['name'];
+// $leads_statuses_id=$account['leads_statuses']['0']['id'];
 ?>

@@ -5,11 +5,11 @@ $root=__DIR__.DIRECTORY_SEPARATOR;
 require $root.'prepare.php'; #Здесь будут производиться подготовительные действия, объявления функций и т.д.
 require $root.'auth.php'; #Здесь будет происходить авторизация пользователя
 require $root.'account_current.php'; #Здесь мы будем получать информацию об аккаунте
-// require $root.'fields_info.php'; #Получим информацию о полях
+require $root.'fields_info.php'; #Получим информацию о полях
 
 // Проверяю, что находится в переменных.
 // print_r($account);
-print_r($pipelines_name);
-print_r($leads_statuses_name);
-print_r($leads_statuses_id);
+// print_r($pipelines_name);
+// print_r($leads_statuses_name);
+// print_r($leads_statuses_id);
 ?>
