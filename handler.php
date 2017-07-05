@@ -7,7 +7,9 @@ require $root.'auth.php'; #Здесь будет происходить авто
 require $root.'account_current.php'; #Здесь мы будем получать информацию об аккаунте
 // require $root.'fields_info.php'; #Получим информацию о полях
 
-// Проверяю, что находится в переменной аккаунта.
+// Проверяю, что находится в переменных.
 // print_r($account);
 print_r($pipelines_name);
+print_r($leads_statuses_name);
+print_r($leads_statuses_id);
 ?>
