@@ -1,4 +1,13 @@
 <?php
+
+/**
+ * Тестовое задание.
+ * Используя данные аккаунты amoCRM и документацию для разработчиков написать небольшой скрипт,
+ * который парсит выдачу метода GET accounts/current и возвращает результат: название воронки продаж, 
+ * название статуса сделки, ID статуса сделки в формате JSON и кодом ответа сервера 200 в случае успеха. 
+ * Код скрипта предоставить. Использование сторонних классов для api amocrm не разрешается.
+ */
+
 $link='https://'.$subdomain.'.amocrm.ru/private/api/v2/json/accounts/current'; #$subdomain уже объявляли выше
 $curl=curl_init(); #Сохраняем дескриптор сеанса cURL
 #Устанавливаем необходимые опции для сеанса cURL
@@ -21,4 +30,7 @@ CheckCurlResponse($code);
  */
 $Response=json_decode($out,true);
 $account=$Response['response']['account'];
+// Сохраняю в переменной название воронки продаж
+// $pipelines=$Response['response']['account']['pipelines'];
+$pipelines_name=$Response['response']['account']['pipelines']['663379']['name'];
 ?>
