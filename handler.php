@@ -6,4 +6,8 @@ require $root.'prepare.php'; #Здесь будут производиться �
 require $root.'auth.php'; #Здесь будет происходить авторизация пользователя
 require $root.'account_current.php'; #Здесь мы будем получать информацию об аккаунте
 require $root.'fields_info.php'; #Получим информацию о полях
+
+getPipelinesName();
+getLeadsStatusesName();
+getLeadsStatusesId();
 ?>
