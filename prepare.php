@@ -23,29 +23,4 @@ function CheckCurlResponse($code)
 		die('Ошибка: '.$E->getMessage().PHP_EOL.'Код ошибки: '.$E->getCode());
 	}
 }
-
-$data=array(
-	'name'=>isset($_POST['name']) ? $_POST['name'] : 'ss',
-	'company'=>isset($_POST['company']) ? $_POST['company'] : '',
-	'position'=>isset($_POST['position']) ? $_POST['position'] : '',
-	'phone'=>isset($_POST['phone']) ? $_POST['phone'] : '',
-	'email'=>isset($_POST['email']) ? $_POST['email'] : 'sd',
-	'web'=>isset($_POST['web']) ? $_POST['web'] : '',
-	'jabber'=>isset($_POST['jabber']) ? $_POST['jabber'] : '',
-	'scope'=>isset($_POST['scope']) && is_array($_POST['scope']) ? $_POST['scope'] : array()
-);
-
-$scope_info=array(
-	'it'=>'IT, телекоммуникации, связь, электроника',
-	'auto'=>'Автосервис, автобизнес',
-	'bookkeeping'=>'Бухгалтерия, аудит',
-	'restaurants'=>'Рестораны, фастфуд',
-	'economy'=>'Экономика, финансы'
-);
-
-#Если не указано имя или e-mail контакта - уведомляем
-if(empty($data['name']))
-	die('Не заполнено имя контакта');
-if(empty($data['email']))
-	die('Не заполнен E-mail контакта');
 ?>
